@@ -20,6 +20,7 @@ defmodule RangerWeb.Router do
     get "/", PageController, :home
 
     live "/greet", GreetLive
+    live "/avatar/:email", AvatarLive
   end
 
   # Other scopes may use custom stacks.
