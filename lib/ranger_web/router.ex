@@ -23,6 +23,7 @@ defmodule RangerWeb.Router do
     live "/avatar/:email", AvatarLive
     live "/counter", CounterLive
     live "/todo", TodoLive
+    live "/newsletter", NewsletterLive
   end
 
   # Other scopes may use custom stacks.
