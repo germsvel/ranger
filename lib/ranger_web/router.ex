@@ -26,6 +26,11 @@ defmodule RangerWeb.Router do
     live "/newsletter", NewsletterLive
     live "/about", AboutLive
     live "/users/:user_id/settings", SettingsLive
+
+    live_session :app do
+      live "/dashboard", DashboardLive
+      live "/team", TeamLive
+    end
   end
 
   # Other scopes may use custom stacks.
