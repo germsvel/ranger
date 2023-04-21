@@ -40,6 +40,11 @@ defmodule RangerWeb.Router do
       live "/albums", AlbumLive.Index
       live "/albums/:id", AlbumLive.Show
     end
+
+    live_session :movies do
+      live "/movies", MovieLive.Index
+      live "/movies/:id", MovieLive.Show
+    end
   end
 
   # Other scopes may use custom stacks.

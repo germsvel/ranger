@@ -34,3 +34,8 @@ config :phoenix, :plug_init_mode, :runtime
 
 config :ranger, :public_uploads_path, "/uploads/test"
 config :ranger, :uploads_dir, "priv/static/uploads/test/"
+
+config :ranger, :cloudinary,
+  api_key: 123,
+  api_secret: "123abc",
+  cloud_name: "demo"

@@ -63,6 +63,11 @@ if config_env() == :prod do
     ],
     secret_key_base: secret_key_base
 
+  config :ranger, :cloudinary,
+    api_key: System.fetch_env!("CLOUDINARY_API_KEY"),
+    api_secret: System.fetch_env!("CLOUDINARY_API_SECRET"),
+    cloud_name: System.fetch_env!("CLOUDINARY_CLOUD_NAME")
+
   # ## SSL Support
   #
   # To get SSL working, you will need to add the `https` key

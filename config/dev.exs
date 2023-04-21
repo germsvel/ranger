@@ -78,3 +78,8 @@ config :phoenix, :plug_init_mode, :runtime
 
 # Disable swoosh api client as it is only required for production adapters.
 config :swoosh, :api_client, false
+
+config :ranger, :cloudinary,
+  api_key: System.get_env("CLOUDINARY_API_KEY"),
+  api_secret: System.get_env("CLOUDINARY_API_SECRET"),
+  cloud_name: System.get_env("CLOUDINARY_CLOUD_NAME")
