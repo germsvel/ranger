@@ -39,3 +39,5 @@ config :ranger, :cloudinary,
   api_key: 123,
   api_secret: "123abc",
   cloud_name: "demo"
+
+config :ranger, RangerWeb.MetricsLive, timeout: 1500
